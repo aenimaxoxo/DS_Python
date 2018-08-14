@@ -491,7 +491,7 @@ class UnaryGate(LogicGate):
     
     def setNextPin(self, source): 
         if self.pin == None: 
-            return int(input("Enter pin input for gate " + self.getName() + " --> "))
+            return int(input("Enter pin input for gate " + self.getLabel() + " --> "))
         else: 
             return self.pin.getFrom().getOutput() 
 
